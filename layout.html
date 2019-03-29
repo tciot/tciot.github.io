@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Layout file for Le Website de Toussaint
+    Begun by Alex McDowell
+    3/13/2019
+-->
+
+<!-- Bootstrap includes -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .layout{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(34, 34, 34);
+    }
+
+	
+    .layout_body {
+        display: flex;
+        flex-grow: 1;
+        min-height: 15em;
+        align-items: stretch;
+        color: white;
+        
+    }
+
+    .layout_header, .layout_footer{
+        min-height: 5em;
+    }
+	
+</style>
+<div class="layout" >
+    <div class="layout_row layout_header" >
+        {{{header}}}
+    </div>
+    <div class="layout_row layout_body">
+        {{{body}}}
+    </div>
+    <div class="layout_row layout_footer">
+        {{{footer}}}
+    </div>
+</div>
